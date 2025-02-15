@@ -100,6 +100,7 @@
   <body>
     <header class="header">
       <div class="container">
+        <!-- Header top -->
         <div class="header-top">
           <!-- Logo -->
           <a href="">
@@ -117,10 +118,12 @@
           <nav class="navbar">
             <ul class="navbar__list">
               <li class="navbar__item">
-                <a href="#home" class="navbar__link navbar__link--active">Home</a>
+                <a href="#home" class="navbar__link navbar__link--active"
+                  >Home</a
+                >
               </li>
               <li class="navbar__item">
-                <a href="#service" class="navbar__link ">Services</a>
+                <a href="#service" class="navbar__link">Services</a>
               </li>
               <li class="navbar__item">
                 <a href="#out" class="navbar__link">About</a>
@@ -133,11 +136,45 @@
           <!-- End Navbar -->
 
           <!-- Action -->
-          <div class="action">
-            <a href="#login" class="action__login">Login</a>
-            <button href="#sign-up" class="btn action__signup">Sign up</button>
+          <div class="header-action">
+            <a href="#login" class="header-action__login">Login</a>
+            <button href="#sign-up" class="btn header-action__signup">
+              Sign up
+            </button>
           </div>
         </div>
+
+        <!-- Hero -->
+        <section class="hero">
+          <!-- hero content -->
+          <div class="hero__content">
+            <h1 class="hero__heading">Exceptional dental care for all ages.</h1>
+            <p class="hero__desc">
+              Exceptional dental care for all ages. Your great smile begins with
+              a great dentist.
+            </p>
+            <div class="hero__row">
+              <a href="#book-online" class="btn">Book Online</a>
+              <span class="hero__phone">or call (123) 456-7890</span>
+            </div>
+          </div>
+
+          <!-- hero media -->
+          <div class="hero__media">
+            <figure class="hero__images">
+              <img
+                src="./assets/images/hero__img2.png"
+                alt="Exceptional dental care for all ages."
+                class="hero__img"
+              />
+              <img
+                src="./assets/images/hero__img2.png"
+                alt="Exceptional dental care for all ages."
+                class="hero__img"
+              />
+            </figure>
+          </div>
+        </section>
       </div>
     </header>
   </body>
