@@ -5,14 +5,18 @@
 :root {
   --primary-color: #10375c;
   --secondary-color: #2e80ce;
+  --third-color: #c9d2da;
+  --four-color: #c9d2da;
+  --height-btn: 60px;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-family: "Sora", sans-serif;
 }
 
@@ -27,12 +31,33 @@ a {
   max-width: calc(100% - 48px);
   margin: 0 auto; /* căn giữa */
 }
+
+.btn {
+  display: inline-block;
+  height: var(--height-btn);
+  padding: 0 20px;
+  border-radius: 99px;
+  min-width: 205px;
+  text-align: center;
+  line-height: var(--height-btn);
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
 /* ===== End Common ===== */
 
 /*===== Header ===== */
 .header {
   min-height: 100vh;
   background: var(--primary-color);
+  padding-top: 30px;
 }
 
 .logo {
@@ -80,5 +105,66 @@ a {
 .logo__branch--small {
   font-weight: 300;
   font-size: 1.2em;
+}
+
+/* Header top */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  margin-left: 304px;
+}
+.navbar__list {
+  display: flex;
+  gap: 42px;
+}
+
+.navbar__item {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__link,
+.action__login {
+  padding: 4px 0;
+  color: var(--third-color);
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+  text-shadow: 1px 0 0 currentColor;
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.navbar__link--active::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  margin-top: 7px;
+  top: -2px;
+}
+
+.action {
+  display: flex;
+  gap: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action__signup {
+  min-width: 104px;
+  height: 44px;
+  line-height: 44px;
 }
 /*===== End Header ===== */
