@@ -520,6 +520,7 @@ a {
   height: 318px;
   background: #eaf6ff;
   border-radius: 6px;
+  transition: 0.25s ease;
 }
 
 .member-item__image {
@@ -533,6 +534,11 @@ a {
   border-radius: 6px;
   background: #eaf6ff;
   object-fit: cover;
+}
+
+.member-item__media:hover {
+  /* padding-top: -28px; */
+  transform: scale(1.1);
 }
 
 .member-item__heading {
@@ -572,6 +578,48 @@ a {
 
 .member__control-btn:hover {
   background: var(--secondary-color);
-  color: #FFF;
+  color: #fff;
 }
 
+/*-----------------------------------------
+# Section App
+-----------------------------------------*/
+.app {
+  margin-top: 85px;
+  height: 522px;
+  padding-top: 95px;
+  /* background: rgb(215, 120, 120); */
+}
+
+.app__body {
+  height: 427px;
+  background: var(--secondary-color);
+  display: flex;
+  gap: 160px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 70px;
+}
+
+.app__content {
+  width: 586px;
+}
+
+.app__text-white {
+  color: #fff;
+}
+
+.app__image {
+  width: 284px;
+  transform: translateY(-48px);
+}
+
+.app__stores {
+  display: flex;
+  gap: 28px;
+  margin-top: 38px;
+}
+
+.app__icon {
+  color: #fff;
+}
