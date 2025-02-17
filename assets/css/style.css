@@ -259,6 +259,8 @@ a {
 /* Services */
 .services {
   margin-top: 170px;
+  padding-bottom: 170px;
+  /* background: orange; */
 }
 
 .service-heading,
@@ -366,32 +368,37 @@ a {
   Section Work
 /*===================================================== */
 .work {
-  margin-top: 170px;
   height: 826px;
   background: #f6fbff;
-  padding: 100px 135px 116px;
 }
 
 .work__top {
-  width: 40%;
   display: flex;
+  padding-top: 100px;
+  width: 40%;
   flex-direction: column;
 }
 
 .work--heading {
   text-align: left;
-  margin: 18px 0;
+  /* margin: 18px 0; */
 }
 
 .work__list {
   margin-top: 86px;
-  display: flex;
-  justify-content: space-between;
+  /* Flex box */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* gap: 30px; */
+
+  /* grid box */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
 .work__item {
-  width: 338px;
+  width: 370px;
   /* height: 370px; */
   flex-shrink: 0;
   border-radius: 4px;
@@ -405,11 +412,6 @@ a {
 .work__item:hover {
   border: 16px solid var(--secondary-color);
   transform: translateY(-16px);
-}
-
-.work__item:hover .work__item {
-  position: relative;
-  bottom: -16px;
 }
 
 .work__title {
@@ -434,5 +436,52 @@ a {
   font-size: 16px;
   font-weight: 300;
   line-height: 28px; /* 175% */
+}
 
+/*-----------------------------------
+# Section feature
+-----------------------------------  */
+.feature {
+  /* height: 491px; */
+  /* background: orange; */
+  margin-top: 85px;
+  padding: 85px 0;
+}
+
+.feature__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 130px;
+}
+
+.feature__media {
+  width: 48.7%;
+}
+
+.feature__images {
+  position: relative;
+  padding:0 58px 121px 0;
+}
+
+.feature__img {
+  width: 512px;
+  height: 370px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  /* background: url(<path-to-image>) lightgray -1.5px 0px / 108.398% 100% no-repeat; */
+  /* box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07); */
+  object-fit: cover;
+}
+
+.feature__img:last-child {
+  position: absolute;
+  width: 332px;
+  height: 370px;
+  right: 0;
+  bottom: 0;
+}
+
+.feature .section-desc {
+  margin-bottom: 38px;
 }
